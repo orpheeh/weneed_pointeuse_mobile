@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a.active-tab {
+  background-color: #777777;
+}
+
+.main-container #member-container,
+#pointage-container,
+#code-container {
+  display: none;
+}
+
+.main-container #member-container.active-tab,
+#pointage-container.active-tab,
+#code-container.active-tab {
+  display: block;
+}
+
+input, select {
+    padding: 10px;
+    margin: 20px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+header a {
+  width: 32.5%;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+table input, select {
+    border:none;
+}
+
+table {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px;
+}
+
+table thead {
+  background-color: black;
+  color: white;
+}
+
+table thead * {
+  padding: 20px;
+}
+
+table a {
+  text-decoration: none;
+  color: #777777;
+  display: inline-block;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+table a:hover {
+  transform: scale(1.5);
+}
+
+.code {
+  color: #cccccc;
+  text-align: center;
+  margin: 20px;
+}
+
+.search-container a {
+  text-decoration: none;
+  color: #777777;
+  transition: 0.4s;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-container a:hover {
+  transform: scale(1.5);
+}
+
+.search-member {
+  width: 0px;
+  transition: 0.4s;
+  border-radius: 10px;  
+  border: none;
+}
+
+.search-container .show-search {
+  width: 30%;
+  border: 1px solid #cccccc;
+}
+
+.pointage-tbody tr, td{
+  padding: 16px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="data.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>We Need | Pointage - Base de données</title>
+</head>
+
+<body>
+    <header>
+        <a href="#member-container" id="member-tab-head" class="active-tab">Membre</a>
+        <a href="#pointage-container" id="pointage-tab-head">Pointage</a>
+        <a href="index.html" id="code-tab-head">Code</a>
+    </header>
+
+    <div class="main-container">
+
+        <div id="member-container" class="active-tab">
+
+            <div id="member-save-container">
+                <h1>Formulaire d'inscription</h1>
+
+                <input type="text" name="nom" id="member-nom" placeholder="Nom" />
+                <input type="text" name="prenom" id="member-prenom" placeholder="Prénom" />
+                <select id="member-status" name="status">
+                    <option value="none">-- Status --</option>
+                    <option value="BENEVOL">Bénévol</option>
+                    <option value="STAGIAIRE">Stagiaire</option>
+                    <option value="STAFF">Salarié</option>
+                    <option value="PRESIDENT">Président</option>
+                    <option value="SG">Secrétaire Général</option>
+                </select>
+                <input type="text" name="mobile" id="member-mobile" placeholder="Téléphone" />
+                <input type="text" name="email" id="member-email" placeholder="Email" />
+                <input type="button" value="Enregistrer" onclick="insert_member()">
+                <h2 title="Code pour inscrire l'application" id="code-continue" class="code">-- Code --</h2>
+            </div>
+
+            <div class="update-container">
+                <div class="header">
+                    <h1 class="title">Mettre à jour la base de donnée</h1>
+                    <div class="search-container">
+                        <input type="text" name="search" class="search-member" placeholder="Nom(s), Prénom(s), ..." onkeypress="search_member()">
+                        <a href="#" class="search-btn" onclick="show_search_input()"><i class="fa fa-search"></i></a>
+                        <a href="data.html" class="search-btn"><i class="fa fa-redo-alt"></i></a>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Status</th>
+                            <th>Téléphone</th>
+                            <th>Email</th>
+                            <th>Mettre à jour</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="member-tbody">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="pointage-container">
+            <div class="filter-container">
+                <input type="text" onkeypress="search_pointage_info(false)" class="search-pointage" placeholder="Nom(s), Prenom(s), Status...">
+                <input type="date" name="date" class="date">
+                <a href="#" class="cool-btn" onclick="search_pointage_info(true)"><i class="fa fa-search"></i> Rechercher</a>
+            </div>
+
+            <div class="result-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nom(s) et Prénom(s)</td>
+                            <td>Status</td>
+                            <td>Téléphone</td>
+                            <td>Email</td>
+                            <td>Date</td>
+                            <td>Arrivee</td>
+                            <td>Départ</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="pointage-tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="code-container">
+            Les code...
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+
+</html>

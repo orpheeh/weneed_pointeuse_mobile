@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+#qrcodecanvas {
+    width: 200px;
+    height: 200px;
+    background-color: #cccccc;
+}
+
+.button-top {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #000000;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    transition: 0.3s;
+    border-radius: 40px;
+}
+
+.button-top:hover {
+    cursor: pointer;
+    background-color: #000000;
+    transform: translateY(-3px);
+}
+
+
+.button-top:active {
+    transform: scale(1.15);
+}
+
+.logo {
+    display: inline-block;
+    width: 45vw;
+    text-align: left;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+}
+
+.logo h2 {
+    font-size: 12px;
+    width: 150px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-left: 40px;
+}
+
+header {
+    box-shadow: #eeeeee 2px 2px 2px;
+    width: 100vw;
+    height: 100px;
+    padding: 10px;
+}
+
+header ul {
+    display: inline-block;
+    text-align: right;
+    width: 48vw;
+}
+
+header li {
+    margin: 20px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+header li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+header li a:hover {
+    transform: scale(1.25);
+}
+
+.button-control {
+    text-decoration: none;
+    color: #777777;
+    background-color: #cccccc;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    border-radius: 5px;
+    box-shadow: #888888 2px 2px 4px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn-off {
+    color: #cccccc;
+    background-color: #eeeeee;
+    box-shadow: none;
+    cursor: default;
+}
+
+.btn-off:hover {
+    transform: none;
+    background-color: #eeeeee;
+    cursor: default;
+}
+
+.button-control:hover {
+    transform: translateY(-5px);
+}
+
+.control {
+    margin: 20px;
+}
+
+#pointage-today table {
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+#pointage-today thead {
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+#pointage-today td,th,tr {
+    padding: 20px;
+}
+
+#pointage-today h1 {
+    font-size: 18px;
+    width: 40%;
+}
+
+.top-head * {
+    display: inline-block;
+}
+
+.top-head a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #777777;
+    margin-left: 20px; 
+    transition: 0.4s;
+}
+
+.top-head a:hover {
+    transform: scale(1.5);
+}
+
+.icon-container {
+    width: 59%;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.icon-container input {
+    border: none;
+    width: 80%;
+
+}
+
+.icon-container input::selection {
+    outline: none;
+    border: none;
+    display: inline-block;
+}
+
+.icon-container .main-input {
+    border: 1px solid #cccccc;
+    width: 0%;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+.top-head {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#pointage-today {
+    margin: 10px;
+}
+
+#container {
+    padding: 10px;
+}
+
+.icon-container .show-input {
+    width: 70%;
+    padding: 10px;
+}

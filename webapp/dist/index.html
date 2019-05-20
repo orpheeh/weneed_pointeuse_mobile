@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>We Need | Pointage</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>We Need</h1>
+            <h2>Université zéro déchets</h2>
+        </div>
+
+        <ul>
+            <li><a href="data.html"><i class="fa fa-database"></i>  base de données</a></li>
+            <li><a href="#"><i class="fa fa-question"></i> Aide</a></li>
+        </ul>
+    </header>
+
+    <div class="flex-container">
+        <div id="container">
+            <div><a href="#" class="button-top" id="generate">Générer le QRCode</a></div>
+            <canvas id="qrcodecanvas">Aperçu du QRCode ...</canvas>
+            <div class="control">
+                <a href="#" id="save" class="button-control btn-off">Enregistrer</a>
+                <a href="#" id="print" class="button-control btn-off">Imprimer</a>
+            </div>
+        </div>
+
+        <div id="pointage-today" class="">
+
+            <div class="top-head">
+                <h1 class="date-title">Liste de présence</h1>
+                <h2 class="date"></h2>
+                <div class="icon-container">
+                    <a href="#" title="Actualiser cette liste" id="refresh"><i class="fas fa-redo-alt"></i></a>
+                    <div class="main-input">
+                        <input type="text" name="member" id="search-member" placeholder="Nom, Prenom, Status, ...">
+                        <a href="#" title="Rechercher" id="search"><i class="fa fa-search"i></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom(s) et Prénom(s)</th>
+                        <th>Status</th>
+                        <th>Téléphone(s)</th>
+                        <th>Email</th>
+                        <th>Arrivé</th>
+                        <th>Depart</th>
+                    </tr>
+                </thead>
+
+                <tbody class="pointage-tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
